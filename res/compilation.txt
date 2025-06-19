@@ -11,7 +11,8 @@ gdb
 C:\Users\user\Desktop\Programming\Compilers\DrMemory-Windows-2.6.0\bin\drmemory.exe
 
 
-
+git config --global user.email "laitkorsunow@gmail.com"
+git config --global user.name "SLimTeARiK"
 
 
 LRU-êýø

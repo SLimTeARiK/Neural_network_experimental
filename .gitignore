@@ -1,0 +1,10 @@
+build/
+res/old/
+
+
+memory.txt
+neural_network_SDL.bmarks
+neural_network_SDL.cbp
+neural_network_SDL.depend
+neural_network_SDL.layout
+output.txt
