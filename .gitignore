@@ -2,8 +2,6 @@ build/
 res/old/
 res/log/
 
-*.txt
-
 memory.txt
 neural_network_SDL.bmarks
 neural_network_SDL.cbp
