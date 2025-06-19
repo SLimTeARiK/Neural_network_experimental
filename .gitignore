@@ -8,3 +8,4 @@ neural_network_SDL.cbp
 neural_network_SDL.depend
 neural_network_SDL.layout
 output.txt
+"build/clang/_deps/highway-build/libhwy_contrib.a" 
