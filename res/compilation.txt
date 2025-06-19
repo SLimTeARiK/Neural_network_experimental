@@ -1,0 +1,141 @@
+компиляция
+cd C:\Users\user\Desktop\Programming\Projects\neural_network_SDL
+cmake -S . -B build -G "Ninja" -DCMAKE_C_COMPILER="C:/Users/user/Desktop/Programming/Compilers/llvm-mingw-20250528-msvcrt-x86_64/bin/clang.exe" -DCMAKE_CXX_COMPILER="C:/Users/user/Desktop/Programming/Compilers/llvm-mingw-20250528-msvcrt-x86_64/bin/clang++.exe" -DCMAKE_MAKE_PROGRAM="C:/Users/user/Desktop/Programming/Compilers/ninja.exe" -DSDL_DIRECTX=OFF -DSDL_RENDER_D3D=OFF -DSDL_RENDER_D3D11=OFF -DSDL_RENDER_D3D12=OFF -DSDL_DIRECT3D=OFF -DSDL3_MF=OFF
+cmake --build build
+build\Debug\neural_network_SDL.exe
+
+
+cmake --build build --clean-first
+
+gdb
+C:\Users\user\Desktop\Programming\Compilers\DrMemory-Windows-2.6.0\bin\drmemory.exe
+
+
+
+
+
+LRU-кэш
+4-канальный наборно-ассоциативный кэш (set-associative)
+песня черепаший суп текст
+
+
+
+
+
+cmake -S . -B /Debug -G "MinGW Makefiles"
+cmake --build build/Debug
+mingw32-make -C"build/bin/Debug" -j
+build\bin\Debug\neural_network_SDL.exe  > output.txt
+echo %errorlevel%
+gdb build\bin\Debug\neural_network_SDL.exe
+gprof build\bin\Debug\neural_network_SDL.exe
+set PATH=%PATH%;"C:\Users\user\Desktop\Programming\Compilers\DrMemory-Windows-2.6.0\bin"
+C:\Users\user\Desktop\Programming\Compilers\DrMemory-Windows-2.6.0\bin\drmemory.exe ./neural_network_SDL.exe
+
+
+
+cd C:\Users\user\Desktop\Programming\Projects\neural_network_SDL
+cmake -S . -G "MinGW Makefiles" -DCMAKE_BUILD_TYPE=Release -Bbuild/bin/Release
+mingw32-make -Cbuild/bin/Release -j
+build\bin\Release\neural_network_SDL.exe
+
+|--------------------------------------------------------------------------------------------------------------------------------------
+
+Приветик), будь полезным помощником. по умолчанию: используй с++ и Русский язык, все необходимые примеры должны включать только необходимые для понимания концепции, куски кода, такие как: заголовочные файлы и сам необходимый код, в конце рассмотри варианты с сторонними библиотеками, рассматривай только если на это останется место и только полностью бесплатные(даже для коммерческого использования), !!!не допускай слишком больших объемов текста с кодом выходящим за твои ограничения!!! пиши без воды и по делу
+
+
+|--------------------------------------------------------------------------------------------------------------------------------------
+Неизменяемые данные
+float x1;  // Координаты верхнего левого угла
+float y1;
+float x2;  // Координаты нижнего правого угла
+float y2;
+Радиус скругления углов
+float radius;
+Цвет
+ALLEGRO_COLOR color  = al_map_rgb(125, 125, 125);//основнй
+ALLEGRO_COLOR color1  = al_map_rgb(100, 100, 100);//при наведении
+ALLEGRO_COLOR color2  = al_map_rgb(100, 100, 100);//при нажатии
+
+битмаска
+typedef enum ButtonBitMask{
+ROUNDING_BUTTON,
+COLOR_BUTTON
+};
+
+|--------------------------------------------------------------------------------------------------------------------------------------
+.\bootstrap.bat clean
+//компиляция boost
+cd C:\Users\user\Desktop\Programming\lib\boost_1_86_0
+.\bootstrap.bat gcc
+.\b2 toolset=gcc install --prefix=bin link=static
+
+
+
+
+|--------------------------------------------------------------------------------------------------------------------------------------
+git clone --recursive https://github.com/KhronosGroup/OpenCL-SDK.git
+cmake --build ./OpenCL-SDK-main/build --target install
+//попытка компиляции OpenCL-SDK
+cd C:\Users\user\Desktop\Programming\lib
+cmake -DVCPKG_TARGET_TRIPLET=x64-windows -G "MinGW Makefiles" -DCMAKE_CXX_FLAGS="-static-libgcc -static-libstdc++" -DOPENCL_BUILD_DEPENDENCIES=OFF -DSHARED_LIBRARY=OFF -D CMAKE_C_COMPILER="C:\Program Files\CodeBlocks\MinGW\bin\gcc.exe" -D CMAKE_CXX_COMPILER="C:\Program Files\CodeBlocks\MinGW\bin\g++.exe" -D BUILD_TESTING=OFF -D BUILD_DOCS=OFF -D BUILD_EXAMPLES=OFF -D BUILD_TESTS=OFF -D OPENCL_SDK_BUILD_SAMPLES=OFF -D OPENCL_SDK_TEST_SAMPLES=OFF  -D VCPKG_TARGET_TRIPLET=x64-windows -B ./OpenCL-SDK/build -S ./OpenCL-SDK  -DCMAKE_RC_COMPILER="C:/Program Files/CodeBlocks/MinGW/bin/windres.exe"
+cmake --build ./OpenCL-SDK/build --target install
+
+
+-D CMAKE_C_COMPILER="C:\Program Files\CodeBlocks\MinGW\bin\gcc.exe"
+-D CMAKE_CXX_COMPILER="C:\Program Files\CodeBlocks\MinGW\bin\g++.exe"
+-D CMAKE_TOOLCHAIN_FILE=/vcpkg/install/root/scripts/buildsystems/vcpkg.cmake
+-D CMAKE_TOOLCHAIN_FILE="C:\Users\user\Desktop\Programming\vcpkg\vcpkg.exe"
+
+cd C:\Users\user\Desktop\Programming\lib
+       cmake -G "MinGW Makefiles" -D CMAKE_C_COMPILER="C:\Program Files\CodeBlocks\MinGW\bin\gcc.exe" -D CMAKE_CXX_COMPILER="C:\Program Files\CodeBlocks\MinGW\bin\g++.exe" -D BUILD_TESTING=OFF -D BUILD_DOCS=OFF -D BUILD_EXAMPLES=OFF -D BUILD_TESTS=OFF -D OPENCL_SDK_BUILD_SAMPLES=ON -D OPENCL_SDK_TEST_SAMPLES=OFF -D CMAKE_TOOLCHAIN_FILE=/vcpkg/install/root/scripts/buildsystems/vcpkg.cmake -D VCPKG_TARGET_TRIPLET=x64-windows -B ./OpenCL-SDK/build -S ./OpenCL-SDK
+       cmake --build ./OpenCL-SDK/build --target install
+|--------------------------------------------------------------------------------------------------------------------------------------
+
+
+cd C:\Users\user\Desktop\Programming\lib\C++\glfw-3.4
+cmake -S . -B build -D BUILD_SHARED=OFF -G "MinGW Makefiles"
+cd build
+mingw32-make
+
+|--------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+winget install Unpack Gzip, Zip & Tar Compressor
+winget install GnuWin32.Gzip//сбой
+winget install --id Git.Git -e --source winget
+
+
+
+
+|--------------------------------------------------------------------------------------------------------------------------------------
+//компиляция Allegro рабочий вариант
+cd C:\Users\user\Desktop\Programming\lib\allegro\build
+cmake -S .. -G "MinGW Makefiles" -DBUILD_SHARED_LIBS=OFF -DPREFER_STATIC_DEPS=ON -DSHARED=OFF -DWANT_MONOLITH=ON  -DCMAKE_BUILD_TYPE=Debug -BDebug2
+cd Debug2
+mingw32-make
+
+cd ..
+cmake -S .. -G "MinGW Makefiles" -DBUILD_SHARED_LIBS=OFF -DPREFER_STATIC_DEPS=ON -DSHARED=OFF -DWANT_MONOLITH=ON  -DCMAKE_BUILD_TYPE=Release -BRelease
+cd Release
+mingw32-make
+
+
+|--------------------------------------------------------------------------------------------------------------------------------------
+//установка git "C:\Users\user\AppData\Local\Programs\Git\bin\git.exe"
+winget install --id Git.Git -e --source winget
+
+|--------------------------------------------------------------------------------------------------------------------------------------
+//установка vcpkg
+git clone https://github.com/microsoft/vcpkg.git
+
+|--------------------------------------------------------------------------------------------------------------------------------------
+//компиляция gcc(нерабочая)
+cd C:\Users\user\Desktop\Programming\Compilers\gcc
+mkdir objdir
+cd objdir
+srcdir/configure

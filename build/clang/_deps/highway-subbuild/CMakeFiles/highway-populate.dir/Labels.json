@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/user/Desktop/Programming/Projects/neural_network_SDL/build/clang/_deps/highway-subbuild/CMakeFiles/highway-populate"
+		},
+		{
+			"file" : "C:/Users/user/Desktop/Programming/Projects/neural_network_SDL/build/clang/_deps/highway-subbuild/CMakeFiles/highway-populate.rule"
+		},
+		{
+			"file" : "C:/Users/user/Desktop/Programming/Projects/neural_network_SDL/build/clang/_deps/highway-subbuild/CMakeFiles/highway-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Users/user/Desktop/Programming/Projects/neural_network_SDL/build/clang/_deps/highway-subbuild/highway-populate-prefix/src/highway-populate-stamp/highway-populate-build.rule"
+		},
+		{
+			"file" : "C:/Users/user/Desktop/Programming/Projects/neural_network_SDL/build/clang/_deps/highway-subbuild/highway-populate-prefix/src/highway-populate-stamp/highway-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Users/user/Desktop/Programming/Projects/neural_network_SDL/build/clang/_deps/highway-subbuild/highway-populate-prefix/src/highway-populate-stamp/highway-populate-download.rule"
+		},
+		{
+			"file" : "C:/Users/user/Desktop/Programming/Projects/neural_network_SDL/build/clang/_deps/highway-subbuild/highway-populate-prefix/src/highway-populate-stamp/highway-populate-install.rule"
+		},
+		{
+			"file" : "C:/Users/user/Desktop/Programming/Projects/neural_network_SDL/build/clang/_deps/highway-subbuild/highway-populate-prefix/src/highway-populate-stamp/highway-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/user/Desktop/Programming/Projects/neural_network_SDL/build/clang/_deps/highway-subbuild/highway-populate-prefix/src/highway-populate-stamp/highway-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Users/user/Desktop/Programming/Projects/neural_network_SDL/build/clang/_deps/highway-subbuild/highway-populate-prefix/src/highway-populate-stamp/highway-populate-test.rule"
+		},
+		{
+			"file" : "C:/Users/user/Desktop/Programming/Projects/neural_network_SDL/build/clang/_deps/highway-subbuild/highway-populate-prefix/src/highway-populate-stamp/highway-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"highway-populate"
+		],
+		"name" : "highway-populate"
+	}
+}
