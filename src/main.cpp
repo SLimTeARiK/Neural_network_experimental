@@ -1,5 +1,5 @@
+// -*- coding: utf-8 -*-
 #include "includes.cpp"
-
 
 // ‘ункци€ дл€ уменьшени€ €ркости цвета
 SDL_Color decrease_brightness(const SDL_Color& color, const float factor) {
