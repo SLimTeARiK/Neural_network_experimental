@@ -22,7 +22,7 @@ git submodule add https://github.com/google/highway.git lib/highway
 git submodule update --init --recursive
 
 git add .
-git commit -m "changing the structure and changing CMake"
+git commit -m "fixed"
 git push -u origin main
 
 git rebase
