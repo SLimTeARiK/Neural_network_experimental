@@ -10,13 +10,22 @@ cmake --build build --clean-first
 gdb
 C:\Users\user\Desktop\Programming\Compilers\DrMemory-Windows-2.6.0\bin\drmemory.exe
 
-git add -A
-git commit -m "v0.0.1"
+git add .
+git commit -m "///"
 git push -u origin main
 
+git rebase
+git filter-branch
 
-git config --global user.email "laitkorsunow@gmail.com"
-git config --global user.name "SLimTeARiK"
+git rm --cached res/log/ -r
+
+git checkout -b fix/button
+Работайте в ней, затем слейте в main:
+
+bash
+git checkout main
+git merge fix/button
+
 
 
 LRU-кэш

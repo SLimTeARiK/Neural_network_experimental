@@ -1,5 +1,6 @@
 *.cpp linguist-language=C++
-*.h linguist-language=C++
+*.hpp linguist-language=C++
 *.c linguist-language=C
-*.tcl linguist-language=Tcl
+*.h linguist-language=C
 *.sh linguist-language=Shell
+*.txt linguist-language=Text
