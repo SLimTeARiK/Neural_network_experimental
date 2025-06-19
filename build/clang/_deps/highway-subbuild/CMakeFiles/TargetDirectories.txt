@@ -1,3 +1,0 @@
-C:/Users/user/Desktop/Programming/Projects/neural_network_SDL/build/clang/_deps/highway-subbuild/CMakeFiles/highway-populate.dir
-C:/Users/user/Desktop/Programming/Projects/neural_network_SDL/build/clang/_deps/highway-subbuild/CMakeFiles/edit_cache.dir
-C:/Users/user/Desktop/Programming/Projects/neural_network_SDL/build/clang/_deps/highway-subbuild/CMakeFiles/rebuild_cache.dir

@@ -1,9 +1,0 @@
-{
-  "revision": 0,
-  "rules": [
-    {
-      "primary-output": "CMakeFiles\\neural_network_SDL.dir\\src\\main.cpp.obj"
-    }
-  ],
-  "version": 1
-}
