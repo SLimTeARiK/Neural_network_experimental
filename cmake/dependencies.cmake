@@ -1,6 +1,6 @@
 
 include(${CMAKE_SOURCE_DIR}/lib/highway.cmake)
-include(${CMAKE_SOURCE_DIR}/lib/sdl2.cmake)
+#include(${CMAKE_SOURCE_DIR}/lib/sdl2.cmake)
 
 
 

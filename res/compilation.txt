@@ -17,12 +17,14 @@ C:\Users\user\Desktop\Programming\Compilers\DrMemory-Windows-2.6.0\bin\drmemory.
 # Добавляем SDL2
 git submodule add https://github.com/libsdl-org/SDL.git lib/SDL2
 git submodule add https://github.com/google/highway.git lib/highway
+git submodule add https://github.com/raysan5/raylib.git lib/raylib
 
 # Инициализируем и обновляем
 git submodule update --init --recursive
+git submodule update --remote --recursive
 
 git add .
-git commit -m "fixed"
+git commit -m "SDL2 has been replaced by raylib"
 git push -u origin main
 
 git rebase
