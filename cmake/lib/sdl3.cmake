@@ -39,12 +39,11 @@ if(WIN32)
   set(SDL_DIRECTX OFF CACHE BOOL "Disable DirectX")
 endif()
 
-target_link_libraries(neural_network_SDL PRIVATE
-  SDL2::SDL2
-  SDL2::SDL2main
+target_link_libraries(${PROJECT_NAME} PRIVATE
+  SDL3::SDL3
 )
-target_include_directories(neural_network_SDL PRIVATE
-  ${SDL2_INCLUDE_DIRS}
+target_include_directories(${PROJECT_NAME} PRIVATE
+  ${SDL3_INCLUDE_DIRS}
 )
 # »щем SDL2
 #set(SDL_DIRECTX, OFF)

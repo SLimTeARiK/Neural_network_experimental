@@ -1,7 +1,7 @@
 #pragma once
 
 
-#include <SDL.h>
+#include <SDL3/SDL.h>
 //#include <SDL2/SDL_ttf.h>
 
 #include <iostream>
@@ -56,7 +56,7 @@
 
 #include "core/random/randoms.hpp"
 
-#include "headers/auto_click.hpp"
+//#include "headers/auto_click.hpp"
 
 #include "core/memory/aligned_alloc_impl.hpp"
 //#include "core/memory/const_memory_vectorization64.hpp"
@@ -65,12 +65,14 @@
 
 //#include "core/Neuron32/dynamic_neural_network_object.hpp"
 //#include "core/Neuron32/dynamic_neural_network_object_pull.hpp"
-#include "core/Neuron32/Objects/static_neural_network_object.hpp"
+//#include "core/Neuron32/Objects/static_neural_network_object.hpp"
 //#include "headers/Neuron64/neural_object.hpp" сделать
 
 #include "headers/color_RGBA_computing_accelerator.hpp"
 
+#include "headers/rooms/sell/const_neural_mini8.hpp"
 #include "headers/rooms/sell/cell.hpp"
+#include "headers/rooms/sell/get_L1_cache_size.hpp"
 //#include "core/device_info.hpp"
 
 //cmake .. -G "MinGW Makefiles" -DCMAKE_BUILD_TYPE=Release -DSDL_STATIC=ON -DSDL_SHARED=OFF -DSDL2_INCLUDE_DIR=C:/Users/user/Desktop/Programming/lib/SDL-release-2.30.11/include -DSDL2_LIBRARY=C:/Users/user/Desktop/Programming/lib/SDL-release-2.30.11/build/libSDL2.a -DFREETYPE_INCLUDE_DIRS=C:/Users/user/Desktop/Programming/lib/freetype-2.12.0/include -DFREETYPE_LIBRARY=C:/Users/user/Desktop/Programming/lib/freetype-2.12.0/build/libfreetype.a

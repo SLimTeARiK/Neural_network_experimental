@@ -1,5 +1,6 @@
 cmake_minimum_required(VERSION 3.29.2)
-project(neural_network_experimental)
+set(PROJECT_NAME neural_network_experimental)
+project(${PROJECT_NAME})
 
 
 set(LLVM_CLANG_PATH "C:/Users/user/Desktop/Programming/Compilers/llvm-mingw-20250528-msvcrt-x86_64/bin")
@@ -18,7 +19,7 @@ endif()
 
 
 # Добавляем исполняемый файл и исходные файлы
-add_executable(neural_network_experimental
+add_executable(${PROJECT_NAME}
     src/main.cpp
 )
 
@@ -29,10 +30,10 @@ include(${CMAKE_SOURCE_DIR}/cmake/dependencies.cmake)
 
 
 # Используем target_compile_definitions для передачи макросов
-target_compile_definitions(neural_network_experimental PUBLIC
+target_compile_definitions(${PROJECT_NAME} PUBLIC
     $<$<CONFIG:Debug>:DEBUG>
 )
 
-set_target_properties(neural_network_experimental PROPERTIES
+set_target_properties(${PROJECT_NAME} PROPERTIES
     RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}
 )

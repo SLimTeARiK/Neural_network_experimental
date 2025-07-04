@@ -31,7 +31,7 @@ uint8_t fatigue = 0;//(fatigue % 2) ? несходил : сходил
 
 static constexpr uint8_t num_layers = 4;
 alignas(32)static constexpr uint8_t layers[num_layers] = {38, 16, 16, 21}; // Ћокальный массив дл€ инициализации brain
-const_neural_object32<num_layers, layers>& brain;//заменить на индес в массиве uint32_t
+const_neural_mini8<char, float, float, float, num_layers, layers, 32>& brain;//заменить на индес в массиве uint32_t
 
 
 uint16_t mutation_chance = 5;//¬еро€тность мутации
@@ -40,7 +40,7 @@ float mutation_strength = 0.001f;//–азмер изменени€
 // онструктор
 neural_bio_cell()
     :
-    brain(new const_neural_object32<num_layers, layers>),
+    brain(new const_neural_mini8<char, float, float, float, num_layers, layers, 32>),
     color({128, 128, 128, 255}){
         brain.random_weight();
 }

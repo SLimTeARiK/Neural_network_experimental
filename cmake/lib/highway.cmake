@@ -75,5 +75,5 @@ set(HWY_EMULATE_SVE OFF CACHE BOOL "Disable SVE emulation on non-SVE hardware")
 add_subdirectory(lib/highway)
 
 # Связывание с Highway
-target_link_libraries(neural_network_experimental PRIVATE hwy hwy_contrib)
-target_include_directories(neural_network_SDL PRIVATE ${HWY_INCLUDE_DIRS})
+target_link_libraries(${PROJECT_NAME} PRIVATE hwy hwy_contrib)
+target_include_directories(${PROJECT_NAME} PRIVATE ${HWY_INCLUDE_DIRS})

@@ -1,7 +1,9 @@
-
 [submodule "lib/highway"]
 	path = lib/highway
 	url = https://github.com/google/highway.git
 [submodule "lib/raylib"]
 	path = lib/raylib
 	url = https://github.com/raysan5/raylib.git
+[submodule "lib/SDL2"]
+	path = lib/SDL2
+	url = https://github.com/libsdl-org/SDL.git

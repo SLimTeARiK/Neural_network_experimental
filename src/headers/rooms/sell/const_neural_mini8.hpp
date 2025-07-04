@@ -1,9 +1,13 @@
-
-template <typename... T>
+/*template <typename... T>
 static constexpr uint8_t allowed_type = ((
     std::is_arithmetic_v<T> ||
     std::is_same_v<T, std::float16_t> ||
     std::is_same_v<T, std::bfloat16_t>) &&
+    (...));*/
+
+template <typename... T>
+static constexpr uint8_t allowed_type = ((
+    std::is_arithmetic_v<T> &&
     (...));
 
 uint32_t quantity_weight_data(uint8_t size_weight, const uint8_t num_layers, const uint8_t * const layer_sizes, uint8_t alignment){

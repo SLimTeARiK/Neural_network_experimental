@@ -30,15 +30,20 @@ int main(int argc, char* argv[]) {
     // Создаем рендерер
     SDL_Renderer* renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
     if (!renderer) {
-        std::cerr << "Failed to create renderer: " << SDL_GetError() << std::endl;
-        SDL_DestroyWindow(window);
-        SDL_Quit();
-        return 1;
+        std::cerr << "Failed to create renderer(SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC): " << SDL_GetError() << std::endl;
+        renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_SOFTWARE | SDL_RENDERER_PRESENTVSYNC); // Fallback
+        if (!renderer) {
+            std::cerr << "Failed to create renderer(SDL_RENDERER_SOFTWARE): " << SDL_GetError() << std::endl;
+            SDL_DestroyWindow(window);
+            SDL_Quit();
+            return 1;
+        }
     }
 
 
     sell::area ar;
-    std::cout << "Hello1\n";
+
+    std::cout << "Hello1\n" << "L1 cache" << GetL1CacheSize() << "\n";
 
     bool running = true;
     SDL_Event event;

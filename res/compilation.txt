@@ -23,15 +23,15 @@ git submodule add https://github.com/raysan5/raylib.git lib/raylib
 git submodule update --init --recursive
 git submodule update --remote --recursive
 
-git add .
-git commit -m "SDL2 has been replaced by raylib"
+git add res/textures/
+git commit -m "fixed"
 git push -u origin main
 
 git rebase
 git filter-branch
 
-git rm --cached res/log/ -r
-
+git rm -r  res/textures/*
+--cached
 git checkout -b fix/button
 Работайте в ней, затем слейте в main:
 

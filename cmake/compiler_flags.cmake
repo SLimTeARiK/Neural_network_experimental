@@ -102,7 +102,7 @@ if(CMAKE_BUILD_TYPE STREQUAL "Debug")
     endif()
 
     # Итоговые флаги для Debug
-    target_compile_options(neural_network_SDL PUBLIC
+    target_compile_options(${PROJECT_NAME} PUBLIC
         ${OPTIMIZATION_DEBUG}
         ${DEBUG_INFO}
         ${DIAGNOSTICS}
@@ -127,7 +127,7 @@ elseif(CMAKE_BUILD_TYPE STREQUAL "Release")
         -fstack-protector-strong # Защита от переполнения стека
     )
 
-    target_compile_options(neural_network_SDL PUBLIC
+    target_compile_options(${PROJECT_NAME} PUBLIC
         ${OPTIMIZATION_RELEASE}
         ${SECURITY}
     )
@@ -172,7 +172,7 @@ elseif(CMAKE_BUILD_TYPE STREQUAL "Test")
         )
     endif()
 
-    target_compile_options(neural_network_SDL PUBLIC
+    target_compile_options(${PROJECT_NAME} PUBLIC
         ${OPTIMIZATION_TEST}
         ${DEBUG_INFO}
         ${DIAGNOSTICS}
@@ -184,21 +184,21 @@ endif()
 # ================================================================
 # ОБЩИЕ ФЛАГИ ДЛЯ ВСЕХ КОНФИГУРАЦИЙ
 # ================================================================
-target_compile_options(neural_network_SDL PUBLIC
+target_compile_options(${PROJECT_NAME} PUBLIC
     ${LTO_FLAGS}            # Оптимизация на этапе линковки
     ${WINDOWS_COMPILE_FLAGS}
 )
 
-target_link_options(neural_network_SDL PUBLIC
+target_link_options(${PROJECT_NAME} PUBLIC
     ${WINDOWS_LINK_FLAGS}
 )
 
 # ================================================================
 # ДОПОЛНИТЕЛЬНЫЕ НАСТРОЙКИ
 # ================================================================
-find_package(NUMA)
-if(NUMA_FOUND)
-    target_compile_definitions(neural_network_SDL PUBLIC -DHAVE_NUMA=1)
-else()
-    target_compile_definitions(neural_network_SDL PUBLIC -DHAVE_NUMA=0)
-endif()
+#find_package(NUMA)
+#if(NUMA_FOUND)
+#    target_compile_definitions(${PROJECT_NAME} PUBLIC -DHAVE_NUMA=1)
+#else()
+#    target_compile_definitions(${PROJECT_NAME} PUBLIC -DHAVE_NUMA=0)
+#endif()
